@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dataset Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+</head>
+<body>
+    <h1>Upload Dataset</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="dataset">
+        <input type="submit" value="Upload">
+    </form>
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html>
